@@ -23,3 +23,4 @@ sometimes there might be problems running in pytorch installation for mac users 
 ```
 conda install pytorch -c pytorch-nightly
 ```
+e
