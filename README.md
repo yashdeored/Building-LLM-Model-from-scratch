@@ -1,26 +1,33 @@
-# Building-LLM-Model-from-scratch
+# FreeCodeCamp - Building LLMs from Scratch
 
-First we need to make directory namely 'fcc-gpt' then we need to install some necessary librarires such as numpy, pylzma, ipykernel and jupyter: 
-```
-mkdir fcc-gpt
-cd fcc-gpt
-pip3 install matplotlib numpy pylzma ipykernel jupyter
-```
-then we need to install torch:
-```
-pip3 install torch
-```
+## Google Colab for those who don't have a GPU: https://colab.research.google.com/drive/1_7TNpEEl8xjHlr9JzKbK5AuDKXwAkHqj?usp=sharing
 
-then we need to create a kernel in Jupyter Notebook
-if ipykernel is not installed, install it using different command:
-```
-pip install ipykernel
-python -m ipykernel install --user --name=cuda --display-name="cuda-gpt"
-```
+Dependencies (assuming windows): `pip install pylzma numpy ipykernel jupyter torch --index-url https://download.pytorch.org/whl/cu118`
 
-sometimes there might be problems running in pytorch installation for mac users for that use:
+If you don't have an NVIDIA GPU, then the `device` parameter will default to `'cpu'` since `device = 'cuda' if torch.cuda.is_available() else 'cpu'`. If device is defaulting to `'cpu'` that is fine, you will just experience slower runtimes.
 
-```
-conda install pytorch -c pytorch-nightly
-```
-e
+## All the links you should need are in this repo. I will add detailed explanations as questions and issues are posted.
+
+## Visual Studio 2022 (for lzma compression algo) - https://visualstudio.microsoft.com/downloads/
+
+## OpenWebText Download - https://skylion007.github.io/OpenWebTextCorpus/
+
+## Socials
+Twitter / X - https://twitter.com/elliotarledge
+
+My YouTube Channel - https://www.youtube.com/channel/UCjlt_l6MIdxi4KoxuMjhYxg
+
+How to SSH from Mac to Windows - https://www.youtube.com/watch?v=7hBeAb6WyIg&t=
+
+How to Setup Jupyter Notebooks in 5 minutes or less - https://www.youtube.com/watch?v=eLmweqU5VBA&t=
+
+Linkedin - https://www.linkedin.com/in/elliot-arledge-a392b7243/
+
+Join My Discord Server - https://discord.gg/pV7ByF9VNm
+
+## Research Papers:
+Attention is All You Need - https://arxiv.org/pdf/1706.03762.pdf
+
+A Survey of LLMs - https://arxiv.org/pdf/2303.18223.pdf
+
+QLoRA: Efficient Finetuning of Quantized LLMs - https://arxiv.org/pdf/2305.14314.pdf
